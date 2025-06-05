@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 import numpy as np
 import torch
@@ -61,7 +60,7 @@ else:
 flag_t = torch.tensor(flag, device=device).unsqueeze(1)
 
 # ===== 6. Keep Only Frames Used in Training =====
-selected_indices = [0, 4, 8, 12, 16, 20]
+selected_indices = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 selected_indices = [i for i in selected_indices if i < T_full]
 
 times_sel = times_full[selected_indices]
