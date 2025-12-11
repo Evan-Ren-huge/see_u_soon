@@ -1,2 +1,2 @@
-# see_u_soon
+# Abaqus
 print("Hello world!")
